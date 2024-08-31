@@ -11,12 +11,11 @@
 }
 
 .form{
-    width: 40%;
-    height: fit-content;
+    width: 35%;
     background-color: var(--white);
     border-radius: 12px;
     margin: 0 auto;
-    padding: 30px 40px;
+    padding: 15px 25px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 
 }
@@ -50,7 +49,7 @@ h1{
 }
 .info-label{
     color: var(--Green-Blue-Main);
-    font-size: medium;
+    font-size: smaller !important;
     font-weight: 700;
     margin-bottom: 8px;
 
@@ -61,7 +60,8 @@ h1{
     padding: 16px 10px;
     border: var(--Medium-Gray) solid 2px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-    font-size: 14px;
+    font-size: 12px;
+    height: 45px;
 }
 .info-label--error{
     color: red;
@@ -76,7 +76,7 @@ h1{
 .info-input:focus{
     border: var(--Dark-Sea-Green-Other) solid 3px;
     color: var(--Dark-Sea-Green-Other);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
 }
 input::placeholder{
@@ -85,7 +85,7 @@ input::placeholder{
 }
 .row h3{
     color: var(--Green-Blue-Main);
-    font-size: medium;
+    font-size: smaller !important;
     font-weight: 700;
     margin-bottom: 8px;
 }
@@ -103,18 +103,21 @@ ul{
 .status-item.status--none .status-name{
     color: var(--Crystal-Other);
     font-weight: 700;
-    font-size: 14px;
+    font-size: 10px !important;
 }
 .status-item.status--display .status-name{
     color: var(--Dark-Sea-Green-Other);
     font-weight: 700;
-    font-size: 14px;
+    font-size: 10px !important;
+}
+img{
+    width: 40%;
 }
 .row.center{
     justify-content: center;
 }
 .status-value{
-    margin-top: 10px;
+    margin-top: 3px;
     width:85%;
     
 }
@@ -131,14 +134,14 @@ input[type="range"] {
     /*  slider progress trick  */
     overflow: hidden;
     border-radius: 16px;
-    height: 14px;
+    height: 12px;
   }
   
   /* Track: webkit browsers */
   input[type="range"]::-webkit-slider-runnable-track {
     background: var(--Crystal-Other);
     border-radius: 16px;
-    height: 14px;
+    height: 12px;
   }
   
   
@@ -148,8 +151,8 @@ input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none; 
     /* creating a custom design */
-    height: 14px; /* Increase the height */
-    width: 14px; /* Increase the width */
+    height: 12px; /* Increase the height */
+    width: 12px; /* Increase the width */
     background-color: var(--Crystal-Other);
     border-radius: 50%;
     border: 3px solid rgba(16, 89, 85, 0.6);
@@ -161,7 +164,7 @@ input[type="range"]::-webkit-slider-thumb {
   
   
 
-.message{
+textarea{
     width: 100%;
 
     border: var(--Medium-Gray) solid 2px;
@@ -172,6 +175,8 @@ input[type="range"]::-webkit-slider-thumb {
     padding: 16px 10px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+
 .submit{
     width: 100%;
     border-radius: 9px;
@@ -182,6 +187,8 @@ input[type="range"]::-webkit-slider-thumb {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     font-size: medium;
     font-weight: 700;
+    height: 50px;
+
 
 }
 .submit:hover{
