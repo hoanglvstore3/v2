@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(164.42% 139.2% at 0% 3.17%, rgba(0, 150, 255, 0.32) 0%, rgba(255, 222, 106, 0.26) 100%);
+    background-repeat: no-repeat;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+}

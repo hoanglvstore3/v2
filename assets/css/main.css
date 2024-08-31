@@ -1,0 +1,192 @@
+:root {
+    --Light-Sea-Green-Main: #20B2AA;
+    --Green-Blue-Main: #2071B2;
+    --Dark-Sea-Green-Other: #105955;
+    --Crystal-Other: #A5E0DD;
+    --Black: #000;
+    --Tinted-Black:#222;
+    --Dark-Gray:#555;
+    --Medium-Gray:#777;
+    --white: #fff;
+}
+
+.form{
+    width: 40%;
+    height: fit-content;
+    background-color: var(--white);
+    border-radius: 12px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+h1{
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: var(--Dark-Gray);
+    font-size: xx-large;
+    display: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3px 0;
+    justify-content: space-between;
+    width: 100%;
+}
+.row .back{
+    color: var(--Green-Blue-Main);
+    font-size: medium;
+    font-weight:400;
+    margin-bottom: 25px;
+}
+.info{
+    width: 47%;
+    margin-bottom: 20px;
+
+}
+.info-label{
+    color: var(--Green-Blue-Main);
+    font-size: medium;
+    font-weight: 700;
+    margin-bottom: 8px;
+
+}
+.info-input{
+    width: 100%;
+    border-radius: 9px;
+    padding: 16px 10px;
+    border: var(--Medium-Gray) solid 2px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+}
+.info-label--error{
+    color: red;
+    font-weight: 300;
+    font-size: small;
+    font-style: italic;
+    margin-top: 7px;
+}
+.info-label--error.hidden{
+    display: none;
+}
+.info-input:focus{
+    border: var(--Dark-Sea-Green-Other) solid 3px;
+    color: var(--Dark-Sea-Green-Other);
+    font-size: 14px;
+    font-weight: 600;
+}
+input::placeholder{
+    font-style: italic;
+    font-weight: 100 !important;
+}
+.row h3{
+    color: var(--Green-Blue-Main);
+    font-size: medium;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+ul{
+    list-style: none;
+}
+.status-item{
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.status-item.status--none .status-name{
+    color: var(--Crystal-Other);
+    font-weight: 700;
+    font-size: 14px;
+}
+.status-item.status--display .status-name{
+    color: var(--Dark-Sea-Green-Other);
+    font-weight: 700;
+    font-size: 14px;
+}
+.row.center{
+    justify-content: center;
+}
+.status-value{
+    margin-top: 10px;
+    width:85%;
+    
+}
+.status-value:hover{
+    cursor: pointer;
+}
+input[type="range"] {
+    /* removing default appearance */
+    -webkit-appearance: none;
+    appearance: none; 
+    /* creating a custom design */
+    cursor: pointer;
+    outline: none;
+    /*  slider progress trick  */
+    overflow: hidden;
+    border-radius: 16px;
+    height: 14px;
+  }
+  
+  /* Track: webkit browsers */
+  input[type="range"]::-webkit-slider-runnable-track {
+    background: var(--Crystal-Other);
+    border-radius: 16px;
+    height: 14px;
+  }
+  
+  
+  /* Thumb: webkit */
+input[type="range"]::-webkit-slider-thumb {
+    /* removing default appearance */
+    -webkit-appearance: none;
+    appearance: none; 
+    /* creating a custom design */
+    height: 14px; /* Increase the height */
+    width: 14px; /* Increase the width */
+    background-color: var(--Crystal-Other);
+    border-radius: 50%;
+    border: 3px solid rgba(16, 89, 85, 0.6);
+    /*  slider progress trick  */
+    box-shadow: -407px 0 0 400px var(--Dark-Sea-Green-Other);
+    
+  }
+  
+  
+  
+
+.message{
+    width: 100%;
+
+    border: var(--Medium-Gray) solid 2px;
+    color: var(--Medium-Gray);
+    border-radius: 9px;
+    resize: none;
+    margin: 20px 0;
+    padding: 16px 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.submit{
+    width: 100%;
+    border-radius: 9px;
+    padding: 16px 10px;
+    border: none;
+    background-color: var(--Light-Sea-Green-Main);
+    color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: medium;
+    font-weight: 700;
+
+}
+.submit:hover{
+    transition: 0.1s;
+
+    background-color: var(--Dark-Sea-Green-Other);
+    cursor: pointer;
+}
