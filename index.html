@@ -130,6 +130,10 @@
             const specialCharacterPattern = /[!@#$%^&*(),.?":{}|<>]/;
             return specialCharacterPattern.test(str);
         }
+        function hasNumber(str) {
+    const numberPattern = /\d/; // Regular expression to match any digit (0-9)
+    return numberPattern.test(str);
+}
         function isValidPhoneNumber(phoneNumber) {
     const phonePattern = /^[0-9]{10}$/;
     return phonePattern.test(phoneNumber);
@@ -140,6 +144,7 @@ function isValidEmail(email) {
     return emailPattern.test(email);
 }
 
+
         const errorNameLabel = document.querySelector('.error-name');
 
         document.addEventListener('DOMContentLoaded', function() {
@@ -148,7 +153,7 @@ function isValidEmail(email) {
             inputElement.addEventListener('input', function() {
             const inputValue = inputElement.value;
 
-            if (hasSpecialCharacter(inputValue)) {
+            if (hasSpecialCharacter(inputValue) || hasNumber(inputValue)) {
             errorNameLabel.classList.remove('hidden');
             } else {
             errorNameLabel.classList.add('hidden');
