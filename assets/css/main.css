@@ -105,7 +105,11 @@ ul{
     font-weight: 700;
     font-size: 10px !important;
 }
-.status-item.status--display .status-name{
+.status-item.status--none img{
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+.status-item .status-name{
     color: var(--Dark-Sea-Green-Other);
     font-weight: 700;
     font-size: 10px !important;
